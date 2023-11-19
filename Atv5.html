@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 5</title>
+</head>
+<body>
+    <h1> Aritmetica </h1>
+    <script>
+         // Solicita dois números inteiros ao usuário
+        const primeiroNumero = parseInt(prompt("Digite o primeiro número inteiro:"));
+        const segundoNumero = parseInt(prompt("Digite o segundo número inteiro (maior que o primeiro):"));
+
+        // Inicializa as variáveis
+        let soma = 0;
+        let quantidade = 0;
+
+        // Loop para somar os números entre os informados pelo usuário
+        for (let i = primeiroNumero; i <= segundoNumero; i++) {
+            soma += i;
+            quantidade++;
+        }
+
+        // Calcula a média aritmética
+        const media = soma / quantidade;
+
+        // Exibe a média e todos os números na tela usando document.write
+        document.write("A média aritmética dos números entre " + primeiroNumero + " e " + segundoNumero + " é: " + media + "<br>");
+
+        document.write("Números inteiros entre " + primeiroNumero + " e " + segundoNumero + ":<br>");
+        for (let i = primeiroNumero; i <= segundoNumero; i++) {
+            document.write(i + "<br>");
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 6 </title>
+</head>
+
+<body>
+    <script>
+   
+  // Leitura das notas do aluno
+  let nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+  let nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+  let notaAprovacao = 9;
+  let quantidadeAprovados = 0;
+
+  // Cálculo da média
+  let media = (nota1 + nota2) / 2;
+
+  // Verifica se o aluno foi aprovado
+  if (media >= notaAprovacao) {
+    quantidadeAprovados++;
+  }
+
+  // Exibe a média
+  document.write(`Média do aluno: ${media.toFixed(2)}<br>`);
+
+  // Pergunta se deseja calcular a média de outro aluno
+  let resposta = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+
+if(resposta == sim){
+  nota1 = parseFloat(prompt("Digite a primeira nota de um aluno: "))
+}else{
+    document.write(`Quantidade de alunos aprovados: ${quantidadeAprovados}`);
+}
+
+     
+// Exibe a quantidade de alunos aprovados
+     
+
+    </script>
+</body>
+</html>
